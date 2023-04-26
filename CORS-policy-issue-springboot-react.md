@@ -20,7 +20,7 @@ public WebMvcConfigurer corsConfigurer() {
 2. Add the @CrossOrigin annotation to your HelloWorldController class and specify the origin of your React application:
 ````
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class HelloWorldController {
     // ...
 }
